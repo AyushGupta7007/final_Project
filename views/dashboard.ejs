@@ -60,7 +60,10 @@
         <li class="nav_item"><a>Statistics</a></li>
         <li class="nav_item"><a>About us</a></li>
         <li class="nav_item">
-          <a id="sign_btn" href="/">Sign Out</a>
+            <form method="post" action="/signout">
+                <input type="text" name="Email" value="<%=data.Email%>" hidden>
+                <input type="submit" id="sign_btn" placeholder="Sign Out" value="Sign Out" />
+        </form>
         </li>
       </ul>
     </div>

@@ -53,6 +53,8 @@ const userSchema = mongoose.Schema({
 
 const userdata = mongoose.model('userdata',userSchema);
 
+let activeUser = new Set();
+
 app.get("/", function(req, res){
     const data = JSON.parse(fs.readFileSync(path.join(__dirname,"ui","/jsonfiles/cities.json")));
     data.user = null;
@@ -79,6 +81,11 @@ app.post("/signin",urlencodedParser,function(req, res){
                 return;
             }
             console.log(data);
+            if(activeUser.has(data.Email)){
+                res.send("User is active from another location.");
+                return;
+            }
+            activeUser.add(data.Email);
             res.render("dashboard.ejs",{data : data});
             return;
         })
@@ -87,6 +94,16 @@ app.post("/signin",urlencodedParser,function(req, res){
     }
     
 })
+
+app.post("/signout",urlencodedParser,function(req, res){
+        let data = req.body;
+        console.log(data);
+        activeUser.delete(data.Email);
+        data = {};
+        data.user = null;
+        res.render("index.ejs",{data : data});
+    }
+);
 
 app.post("/signupcheck",urlencodedParser,function(req, res){
     const data = req.body;
