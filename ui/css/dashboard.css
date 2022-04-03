@@ -1,0 +1,333 @@
+.side_margin30 {
+  margin: 0px 30px;
+}
+
+#profile_side {
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--lightBg);
+}
+
+#profile_box img {
+  height: 75px;
+  width: 75px;
+  border: 4px solid var(--brandOrange);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#profile_box {
+  display: flex;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 5px 10px;
+}
+
+#info_side {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.toggle_right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#user_rentals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#user_homes {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.user_rentals_item {
+  margin: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid var(--lightBg);
+}
+
+.user_rent_pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+}
+
+.user_rent_pics > * {
+  border-radius: 5px;
+}
+
+.user_ren_in {
+  display: grid;
+  margin-left: 20px;
+}
+
+.user_ren_info h2 {
+  margin-left: -20px;
+}
+
+.room-feats {
+  display: initial;
+  list-style: initial;
+  font-size: 1.25rem;
+}
+
+.room-feats > * {
+  margin: 10px 0;
+}
+
+.modify-ren-info {
+  margin-left: -20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#profile_box h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+#profile_box div {
+  align-self: center;
+}
+
+.arrow_down {
+  align-self: center;
+  width: 36px;
+  margin-top: 10px;
+}
+
+.header_rent_list {
+  color: var(--brandOrange);
+  display: flex;
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  max-height: 30px;
+}
+
+#left_nav_men ul {
+  flex-flow: column nowrap;
+}
+
+#left_nav_men ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#left_nav_men ul li:hover {
+  color: var(--brandOrangeDark);
+  background: var(--brandOrangeLight);
+}
+
+.selected_nav {
+  color: var(--brandOrangeDark);
+  background: var(--brandOrangeLight);
+}
+
+#left_s {
+  border-right: 1px solid var(--lightBg);
+  border-bottom: 1px solid var(--lightBg);
+}
+
+.right_s_item {
+  position: absolute;
+  visibility: hidden;
+  margin: 20px 20px;
+  width: calc(100% - 40px);
+}
+
+#right_s {
+  position: relative;
+}
+
+.card_btn {
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1.25rem;
+  background-color: var(--modeColor);
+}
+
+.top_block_space {
+  height: 20vh;
+  background-color: var(--brandOrangeLight);
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 2px solid var(--brandOrange);
+}
+
+#profile_main_left {
+  width: 50%;
+  display: flex;
+  margin: -25px 0px 20px 60px;
+  height: 100px;
+}
+
+#profile_top_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#profile_main_left img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--brandOrange);
+  position: relative;
+  bottom: 50px;
+}
+
+#profile_main_left div {
+  margin: 36px 0px 0px 20px;
+}
+
+#profile_username_main {
+  font-size: 1.25rem;
+}
+
+#change_pass_btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--modeColor);
+}
+
+#change_pass_btn:hover {
+  background: var(--brandOrange);
+}
+
+#pfbtn_left {
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border: 2px solid var(--brandOrange);
+  background-color: var(--modeColor);
+  cursor: pointer;
+}
+
+#pfbtn_right {
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border: none;
+  color: var(--modeColor);
+  background-color: var(--brandOrange);
+  border: 2px solid var(--brandOrange);
+  cursor: pointer;
+}
+
+#pfbtn_right:hover {
+  background: var(--brandOrangeDark);
+  border: 2px solid var(--brandOrangeDark);
+}
+
+#pfbtn_left:hover {
+  background: var(--brandOrange);
+}
+
+#profile_form_edit form * {
+  font-size: 1.25rem;
+}
+
+#main_form_profile {
+  display: grid;
+  margin-left: 30px;
+  width: 65%;
+}
+
+#main_form_profile label {
+  color: var(--textMedium);
+  font-weight: bold;
+}
+
+.main_form_profile_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  border-bottom: 1px solid var(--lightBorder);
+}
+
+.main_form_profile_item input {
+  width: 50%;
+  height: 60%;
+  padding: 5px 10px;
+  border: 1px solid var(--textMedium);
+  border-radius: 5px;
+}
+
+.main_form_profile_item:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#preview_pp_btns button {
+  background: transparent;
+  border: none;
+  color: var(--brandOrangeDark);
+  border: 2px solid var(--brandOrangeDark);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 5px 10px;
+  margin: 0 20px 0 0;
+}
+
+#preview_pp_btns button:hover {
+  background: var(--brandOrangeLight);
+}
+
+.add_btn {
+  background: var(--brandOrange);
+  border: none;
+  color: var(--modeColor);
+}
+
+.add_btn a {
+  align-items: center;
+  color: inherit;
+  column-gap: 10px;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.add_btn:hover {
+  background: var(--brandOrangeDark);
+}
+
+.add_btn p {
+  padding: 0;
+  margin: 0;
+}
+
+.add_btn svg {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  #user_rentals {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 850px) {
+}
+@media (max-width: 500px) {
+}

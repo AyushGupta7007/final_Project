@@ -1,0 +1,252 @@
+form {
+  font-size: 1.25rem;
+}
+
+.form_a h2 {
+  font-family: "Lora", serif;
+}
+
+.add_form {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  width: 100%;
+}
+
+.select_input {
+  padding: 8px 5px;
+  color: var(--textMedium);
+  margin-bottom: 15px;
+  background: var(--modeColor);
+  border: 1px solid var(--brandOrangeLight);
+  border-radius: 5px;
+  font-size: inherit;
+}
+
+.baths_beds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.add_form input {
+  border: solid 1px var(--brandOrangeLight);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: inherit;
+  margin-bottom: 15px;
+}
+
+.add_form textarea {
+  border: solid 1px var(--brandOrangeLight);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+h2.address-label {
+  font-family: "Nunito", sans-serif;
+  color: var(--brandOrange);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+label {
+  color: var(--brandOrange);
+  margin: 5px 4px;
+  font-weight: bold;
+}
+
+.form_for {
+  padding: 10px 20px;
+  border: 2px solid var(--brandOrange);
+  border-radius: 5px;
+  font-weight: bolder;
+  margin-top: 35px;
+  background-color: var(--brandOrange);
+  font-size: inherit;
+  color: var(--modeColor);
+}
+
+.form_for:hover {
+  background-color: var(--brandOrangeDark);
+}
+
+.form_bac {
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid var(--brandOrange);
+  color: var(--brandOrange);
+  display: flex;
+  font-size: inherit;
+  margin-top: 20px;
+  padding: 0;
+  transition: all 350ms;
+}
+
+.form_bac:hover {
+  color: var(--brandOrangeDark);
+  background-color: transparent;
+  transform: translateX(-20px);
+}
+
+.form_bac svg {
+  width: 40px;
+}
+
+#previews {
+  height: 400px;
+  background: var(--lightBg);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.preview_item {
+  flex-basis: 45%;
+  height: 45%;
+  margin-left: 3.3%;
+  border: 2px solid var(--modeColor);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  object-fit: cover;
+}
+
+h2.add_img_txt,
+h3.add_img_txt {
+  font-family: "Nunito", sans-serif;
+  color: var(--brandOrange);
+  display: block;
+  margin: 10px auto;
+}
+
+h2.add_img_txt {
+  font-size: 1.5rem;
+}
+
+h3.add_img_txt {
+  font-size: 1.25rem;
+}
+
+#add_btn {
+  background: var(--brandOrange);
+  color: var(--modeColor);
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: lighter;
+  text-align: center;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+#add_btn:hover {
+  background: var(--brandOrangeDark);
+}
+
+#add_btn i {
+  height: 25px;
+}
+
+#previews h3 {
+  color: var(--textLight);
+  margin-left: 18%;
+  margin-top: -35%;
+}
+
+#pic_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+
+#remove_pics {
+  margin: 0;
+  padding: 5px 20px;
+  color: var(--brandOrange);
+  border: 2px solid var(--brandOrange);
+  background: transparent;
+  font-size: inherit;
+}
+
+#remove_pics:hover {
+  background-color: var(--brandOrange);
+  color: var(--modeColor);
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  #previews {
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  #add_btn {
+    width: 35%;
+    font-size: 0.7rem;
+    max-height: 30px;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  .select_input {
+    font-size: 0.7rem;
+    padding: 5px 3px;
+    margin-bottom: 10px;
+  }
+
+  .add_form input {
+    font-size: 0.7rem;
+    padding: 7px 7px;
+    margin-bottom: 10px;
+  }
+
+  .add_form textarea {
+    padding: 5px 5px;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .form_for {
+    padding: 5px 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .form_bac {
+    font-size: 1.1rem;
+    max-width: 70px;
+  }
+
+  #previews h2 {
+    font-size: 1.5rem;
+  }
+
+  #previews h3 {
+    font-size: 0.8rem;
+  }
+
+  #remove_pics {
+    width: 35%;
+    font-size: 0.7rem;
+    min-height: 30px;
+  }
+}
